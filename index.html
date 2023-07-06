@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sofi</title>
+  <link rel="stylesheet" href="style.css">
+    <script src="slideshow.js"></script>
+    <meta name="keywords" content="Sofija, Sofija Tasevska, FINKI">
+</head>
+<body>
+
+<div id="homenav"></div>
+
+<div class="navbar">
+    <a class="navlinks" href="#homenav">home</a>
+    <br>
+    <a class="navlinks" href="#aboutnav">about</a>
+    <br>
+    <a class="navlinks" href="#gallerynav">gallery</a>
+    <br>
+    <a class="navlinks" href="#moviesnav">movies</a>
+</div>
+
+<div class="contact">
+    <a style="font-size: 30px" class="links" href="https://github.com/sofiatqsevskaa"><ion-icon name="logo-github"></ion-icon></a>
+    <a style="font-size: 30px" class="links" href="https://www.linkedin.com/in/sofija-tasevska-807a92253/"><ion-icon name="logo-linkedin"></ion-icon></a>
+</div>
+
+<div id="introduction">
+    <h1><span id="welcome">hi, i'm sofi.</span></h1>
+    <br>
+    <span id="intro">I'm a computer science student from Skopje, with a strong passion for various fields
+        of science.
+  </span>
+    <br>
+    <button class="button">
+        <a id="mail" href="mailto: tasevska.sofija@yahoo.com">contact me</a>
+    </button>
+
+</div>
+
+<img id="aboutnav" class="dividers" src="a.png" alt="" height="75" width="459"/>
+
+
+<div class="aboutme">
+    <div class="text">
+        <div>I finished high school in <a class="links" href="https://rjk.edu.mk/">Rade Jovcevski-Korcagin</a>. I'm currently a student at
+            <a class="links" href="https://www.finki.ukim.mk/en">FINKI</a> university, Skopje. Even though I enjoy studying math, I enjoy my programming lessons the most. I like experimenting with different technologies, so I can figure out what I enjoy working with the most.</div>
+        <span>I have previously worked with:</span>
+        <ul>
+            <li>
+                C/C++
+            </li>
+            <li>
+                html & css
+            </li>
+            <li>
+                python
+            </li>
+        </ul>
+        <br>
+        <span>Currently learning:</span>
+        <ul>
+            <li>C#</li>
+            <li>JS</li>
+        </ul>
+        <br>
+        In my free time I like to play video games and exercise. I'd like to present a few of my favorite games in the gallery section of this same page.
+    </div>
+    <div class="image">
+        <img id="img" src="jas.jpg" alt=""/>
+    </div>
+</div>
+
+<!--<hr>  !!!!!!!!!!!!!!!!!!!!!!!!!!-->
+
+<img id="gallerynav"  style="padding-bottom: 10px" class="dividers" src="a.png" alt="" height="75" width="459"/>
+
+
+
+<div class="gallery">
+    <div class="videogames" style="text-align: center">Video Games</div>
+    <div class="gallerycontainer">
+
+        <div id="bl"  class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="1.png" alt="" onload="temolamraboti()" >
+            <div class="text2">drakengard</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="2.jpg" alt="">
+            <div class="text2">dead space</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="3.jpg" alt="">
+            <div class="text2">doom</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+</div>
+
+<img class="dividers" style="margin:50px auto 150px auto " src="a.png" alt="" height="75" width="459"/>
+
+<section class="services" id="services">
+    <div class="videogames" style="text-align: center">Movies</div>
+    <div class="services-container">
+        <div class="services-box">
+            <h3> Interstellar </h3>
+            <div class="text3">Christopher Nolan delivers a masterpiece,
+                full of wonder and amazement. The film is about a group of
+                astronauts tasked with finding a new planet for humanity as
+                the earth is becoming inhabitable when a plant disease has ravaged
+                the food sources and a butter factory overflows. </div>
+            <a class="links learnmore" href="https://www.imdb.com/title/tt0816692/">Learn More</a>
+        </div>
+        <div class="services-box">
+            <h3> Pride and Prejudice </h3>
+            <div class="text3">Normally when one reads a book and comes to love
+                the story, watching the film adaptation can be disheartening.
+                With that being said this movie is probably my favorite book to movie adaptation.
+                I am able to watch this film over and over and just never tire of it. It is beautiful in every aspect.</div>
+            <a class="links learnmore" href="https://www.imdb.com/title/tt0414387/?ref_=nv_sr_srsg_0_tt_8_nm_0_q_pride">Learn More</a>
+        </div>
+        <div class="services-box">
+            <h3>A Clockwork Orange </h3>
+            <div class="text3"> One of, if not the greatest film ever made.
+                It might not be the most popular opinion to think that "2001"
+                isn't Kubrick's greatest, but I really think this is just as good,
+                but very different from it. This movie is a constant warning for our future. </div>
+            <a class="links learnmore" href="https://www.imdb.com/title/tt0066921/?ref_=nv_sr_srsg_0_tt_7_nm_1_q_Clockwor">Learn More</a>
+        </div>
+    </div>
+</section>
+
+
+
+
+<img id="moviesnav" class="dividers" style="margin-top: 50px" src="a.png" alt="" height="75" width="459"/>
+
+
+<div id="arr" style="text-align: center">
+    Made by Sofija Tasevska. All rights reserved &copy.
+</div>
+
+
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
