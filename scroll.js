@@ -28,3 +28,4 @@ document.addEventListener("DOMContentLoaded", function () {
         link.style.transitionDelay = `${index * 0.3}s`; 
     });
 });
+

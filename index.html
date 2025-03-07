@@ -9,12 +9,12 @@
     <meta name="keywords" content="Sofija, Sofija Tasevska, FINKI">
 </head>
 <body>
-
-
+<div id="top-nav"></div>
+<div id="top-section">
 <div class="navbar reveal_down">
-    <a class="navlinks navb" href="#homenav">home</a>
-    <a class="navlinks navb" href="#aboutnav">about</a>
-    <a class="navlinks navb" href="#gallerynav">portfolio</a>
+    <a class="navlinks navb" href="#top-nav">home</a>
+    <a class="navlinks navb" href="#about">about</a>
+    <a class="navlinks navb" href="#proj-nav">portfolio</a>
     <button class="navlinks"> <a class="buttontext" href="">resume</a></button>
 </div>
 
@@ -28,11 +28,52 @@
 <div class="reveal" id="introduction">
     <span id="intro" >I'm a computer science student from Skopje, with a strong passion for various fields
         of science.</span>
-    <br>
-    <br>
+
     <button class="reveal">
         <a class="buttontext" href="mailto: tasevska.sofija@yahoo.com">contact me</a>
     </button>
+
+    <div id="about"></div>
+    
+</div>
+</div>
+
+
+<div id="about-nav" class="reveal">
+    I'm a computer science student who enjoys solving problems with code.
+    I'm into math, music, video games, and exploring different aspects of technology.
+    I use Linux for development and always look for ways to improve my skills.
+</div>
+
+<div id="proj-nav"></div>
+
+<div id="recent-projects">
+    <span>$recent_projects</span>
+</div>
+
+
+<div id="galnav">
+    <div class="carousel" data-carousel>
+        <button class="arrow left" data-carousel-button="prev">&#10094;</button>
+        <button class="arrow right" data-carousel-button="next">&#10095;</button>
+        <ul data-slides>
+            <li class="slide" data-active >
+                <img src="pngs/exp1.jpg" alt="Coding Project #1">
+                <div class="experience-overlay"></div>
+                <div class="experience-text">AI agent that can solve chess problems using different algorithms.</div>
+            </li>
+            <li class="slide">
+                <img src="pngs/exp2.jpg" alt="Coding Project #2">
+                <div class="experience-overlay"></div>
+                <div class="experience-text">FPS game.</div>
+            </li>
+            <li class="slide">
+                <img src="pngs/exp3.jpg" alt="Coding Project #3">
+                <div class="experience-overlay"></div>
+                <div class="experience-text">2D platformer game.</div>
+            </li>
+        </ul>
+    </div>
 </div>
 
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
