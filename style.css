@@ -299,16 +299,22 @@ html, body {
 }
 
 
-
 .experience-text {
     position: absolute;
     top: 60%;
-    max-width: 800px;
+    max-width: 50%;
     color: #ccd2e4;
     font-size: 20px;
     z-index: 2;
     text-align: center;
 }
+
+@media (max-width: 768px) {
+    .experience-text {
+        display: none;
+    }
+}
+
 
 @keyframes slideOutLeft {
     from {
@@ -378,7 +384,6 @@ html, body {
     width: 100%;
     max-width: 800px;
     margin: 0 auto;
-    margin-top: -150px;
 }
 
 .project-item {
@@ -401,7 +406,7 @@ html, body {
     color: #8892b0;
     text-decoration: none;
     transition: color 0.3s;
-    z-index: 20;
+    z-index: 19;
 }
 
 .github-icon:hover {
