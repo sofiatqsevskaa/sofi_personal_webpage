@@ -370,3 +370,40 @@ html, body {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+#project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: -150px;
+}
+
+.project-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border: 2px solid #8892b0;
+    border-radius: 15px;
+    background-color: #0a192f;
+    color: #fff;
+}
+
+.project-item span {
+    font-size: 18px;
+}
+
+.github-icon {
+    font-size: 24px;
+    color: #8892b0;
+    text-decoration: none;
+    transition: color 0.3s;
+    z-index: 20;
+}
+
+.github-icon:hover {
+    color: #cdd0da;
+}
