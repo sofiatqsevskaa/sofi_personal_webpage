@@ -77,6 +77,13 @@ a:hover {
     text-decoration: none;
 }
 
+@media (max-width: 1200px) {
+    .links {
+        display: none;
+    }
+}
+
+
 .navlinks {
     color: #c0c5ce;
     text-decoration: none;
@@ -277,6 +284,7 @@ html, body {
 .arrow {
     position: absolute;
     background: none;
+    scale: 60%;
     border: none;
     transform: translateY(-350%);
     color: #8892b0;
@@ -377,6 +385,8 @@ html, body {
     transform: translate(-50%, -50%);
 }
 
+
+
 #project-list {
     display: flex;
     flex-direction: column;
@@ -384,6 +394,7 @@ html, body {
     width: 100%;
     max-width: 800px;
     margin: 0 auto;
+    margin-top: 30px;
 }
 
 .project-item {
@@ -412,3 +423,48 @@ html, body {
 .github-icon:hover {
     color: #cdd0da;
 }
+
+
+@media (max-width: 768px) {
+    .carousel {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .carousel > ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .slide {
+        position: relative;
+        opacity: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: none;
+    }
+
+    .slide > img {
+        display: none;
+    }
+
+    .arrow {
+        display: none;
+    }
+}
+
+#arr
+{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+

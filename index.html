@@ -1,5 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+    
+
+<script>
+    function moveCarouselItems() {
+        const projectList = document.getElementById("project-list");
+        const carousel = document.querySelector(".carousel");
+        const slides = document.querySelectorAll(".slide");
+
+        if (window.innerWidth <= 768) {
+            // Remove previously added items (without GitHub links)
+            document.querySelectorAll(".project-item").forEach(item => {
+                if (!item.querySelector("a")) {
+                    item.remove();
+                }
+            });
+
+            slides.forEach(slide => {
+                const text = slide.querySelector(".experience-text")?.textContent.trim();
+                if (text) {
+                    const projectItem = document.createElement("div");
+                    projectItem.classList.add("project-item");
+
+                    const span = document.createElement("span");
+                    span.textContent = text;
+
+                    projectItem.appendChild(span);
+                    projectList.appendChild(projectItem);
+                }
+            });
+
+            carousel.style.display = "none"; 
+        } else {
+            carousel.style.display = "flex"; 
+            document.querySelectorAll(".project-item").forEach(item => {
+                if (!item.querySelector("a")) {
+                    item.remove();
+                }
+            });
+        }
+    }
+
+    window.addEventListener("resize", moveCarouselItems);
+    window.addEventListener("load", moveCarouselItems);
+</script>
+
+
 <head>
     <meta charset="UTF-8">
     <title>sofi</title>
@@ -60,17 +106,25 @@
             <li class="slide" data-active >
                 <img src="pngs/exp1.jpg" alt="Coding Project #1">
                 <div class="experience-overlay"></div>
-                <div class="experience-text">AI agent that can solve chess problems using different algorithms.</div>
+                <div class="experience-text">AI agent that can solve chess problems using different algorithms.
+                    <br>
+                    <a href="https://github.com/sofiatqsevskaa/chess_puzzle_test" class="github-icon photo-icon" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+                </div>
             </li>
             <li class="slide">
                 <img src="pngs/exp2.jpg" alt="Coding Project #2">
                 <div class="experience-overlay"></div>
-                <div class="experience-text">FPS game.</div>
+                <div class="experience-text">FPS game.
+                    <br>
+                    <a href="https://github.com/dstojkoski/ggj" class="github-icon photo-icon" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+                </div>
             </li>
             <li class="slide">
                 <img src="pngs/exp3.jpg" alt="Coding Project #3">
                 <div class="experience-overlay"></div>
-                <div class="experience-text">2D platformer game.</div>
+                <div class="experience-text">2D platformer game. 
+                    <br>
+                    <a href="https://sofiatqsevska.itch.io/2d-plat" class="github-icon photo-icon" target="_blank"><ion-icon name="play-outline"></ion-icon></a></div>
             </li>
         </ul>
     </div>
@@ -85,6 +139,10 @@
         <span>Quiz creator</span>
         <a href="https://github.com/sofiatqsevskaa/Quiz" class="github-icon" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
     </div>
+</div>
+
+<div id="arr" style="text-align: center">
+    Made by Sofija Tasevska.
 </div>
 
 
