@@ -1,56 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-    
-
-<script>
-    function moveCarouselItems() {
-        const projectList = document.getElementById("project-list");
-        const carousel = document.querySelector(".carousel");
-        const slides = document.querySelectorAll(".slide");
-
-        if (window.innerWidth <= 768) {
-            // Remove previously added items (without GitHub links)
-            document.querySelectorAll(".project-item").forEach(item => {
-                if (!item.querySelector("a")) {
-                    item.remove();
-                }
-            });
-
-            slides.forEach(slide => {
-                const text = slide.querySelector(".experience-text")?.textContent.trim();
-                if (text) {
-                    const projectItem = document.createElement("div");
-                    projectItem.classList.add("project-item");
-
-                    const span = document.createElement("span");
-                    span.textContent = text;
-
-                    projectItem.appendChild(span);
-                    projectList.appendChild(projectItem);
-                }
-            });
-
-            carousel.style.display = "none"; 
-        } else {
-            carousel.style.display = "flex"; 
-            document.querySelectorAll(".project-item").forEach(item => {
-                if (!item.querySelector("a")) {
-                    item.remove();
-                }
-            });
-        }
-    }
-
-    window.addEventListener("resize", moveCarouselItems);
-    window.addEventListener("load", moveCarouselItems);
-</script>
-
 
 <head>
     <meta charset="UTF-8">
     <title>sofi</title>
     <link rel="stylesheet" href="style.css">
     <script src="slideshow.js"></script>
+    <script src="carousel.js"></script>
     <script src="scroll.js"></script>
     <meta name="keywords" content="Sofija, Sofija Tasevska, FINKI">
 </head>
@@ -74,7 +30,7 @@
 <div class="reveal" id="introduction">
     <span id="intro" >I'm a computer science student from Skopje, with a strong passion for various fields
         of science.</span>
-
+        <br>
     <button class="reveal">
         <a class="buttontext" href="mailto: tasevska.sofija@yahoo.com">contact me</a>
     </button>
@@ -138,6 +94,10 @@
     <div class="project-item">
         <span>Quiz creator</span>
         <a href="https://github.com/sofiatqsevskaa/Quiz" class="github-icon" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+    </div>
+    <div class="project-item">
+        <span>LLM Evaluation App using Open Router</span>
+        <a href="https://github.com/sofiatqsevskaa/LLM_Evaluation" class="github-icon" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
     </div>
 </div>
 
